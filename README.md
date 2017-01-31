@@ -1,4 +1,5 @@
 # Index Pluggable Study
+By: Madeline Wessels, Jasper Hugunin, Matthew Staehely
 
 A case study being performed on the Index Checker pluggable tool, from a programmer's perspective.
 This case study is looking to examine the effectiveness and efficiency of the index checker tool, with
