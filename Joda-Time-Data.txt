@@ -1,0 +1,33 @@
+Joda-time Data
+
+Annotations (by type):
+IndexFor: 32
+IndexOrHigh: 0
+IndexOrLow: 1
+Positive: 141
+NonNegative: 233
+GTENegativeOne: 6
+LTLengthOf: 8
+LTEqLengthOf: 0
+LTOMLengthOf: 1
+MinLen: 17
+SameLen: 6
+
+Total: 478
+Lower Bounds: 413
+Upper Bounds: 42
+
+Suppressions- form of SuppressWarnings("index:
+array.access.unsafe.high: 66
+array.access.unsafe.low: 0
+argument.type.incompatible: 44
+return.type.incompatible: 12
+assignment.type.incompatible: 10
+override.param.invalid: 1
+index: 33
+
+Total: 166
+
+Errors found: 0
+
+--Analysis-- 
