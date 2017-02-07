@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# Run from the root of joda-time
+
+echo "Annotations:"
+echo
+echo "IndexFor: $(grep '@IndexFor' -r src/main/java | wc -l)"
+echo "IndexOrHigh: $(grep '@IndexOrHigh' -r src/main/java | wc -l)"
+echo "IndexOrLow: $(grep '@IndexOrLow' -r src/main/java | wc -l)"
+echo
+echo "Positive: $(grep '@Positive' -r src/main/java | wc -l)"
+echo "NonNegative: $(grep '@NonNegative' -r src/main/java | wc -l)"
+echo "GTENegativeOne: $(grep '@GTENegativeOne' -r src/main/java | wc -l)"
+echo
+echo "LTLengthOf: $(grep '@LTLengthOf' -r src/main/java | wc -l)"
+echo "LTEqLengthOf: $(grep '@LTEqLengthOf' -r src/main/java | wc -l)"
+echo "LTOMLengthOf: $(grep '@LTOMLengthOf' -r src/main/java | wc -l)"
+echo
+echo "MinLen: $(grep '@MinLen' -r src/main/java | wc -l)"
+echo "SameLen: $(grep '@SameLen' -r src/main/java | wc -l)"
+echo
+echo
+echo "Suppressions:"
+echo
+echo "Total: $(grep '@SuppressWarnings("index' -r src/main/java | wc -l)"
+echo "index:array.access.unsafe.high: $(grep '@SuppressWarnings("index:array.access.unsafe.high' -r src/main/java | wc -l)"
+echo "index:array.access.unsafe.low: $(grep '@SuppressWarnings("index:array.access.unsafe.low' -r src/main/java | wc -l)"
+echo "index:argument: $(grep '@SuppressWarnings("index:argument' -r src/main/java | wc -l)"
+echo "index:return: $(grep '@SuppressWarnings("index:return' -r src/main/java | wc -l)"
+echo "index:assignment: $(grep '@SuppressWarnings("index:assignment' -r src/main/java | wc -l)"
+echo "index:override: $(grep '@SuppressWarnings("index:override' -r src/main/java | wc -l)"
+echo "index: $(grep '@SuppressWarnings("index")' -r src/main/java | wc -l)"
+
+
