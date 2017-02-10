@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Needs PATH and JAVA_HOME set up as described in the manual in the section about installing from source
+
+# Set up classpath, sourcepath, destination)
+JAVAC_OPTIONS="-classpath target/classes:$HOME/.m2/repository/org/joda/joda-convert/1.2/joda-convert-1.2.jar: -sourcepath src/main/java:target/generated-sources/annotations -d target/classes"
+SOURCE_FILES="src/main/java/org/joda/time/*.java src/main/java/org/joda/time/*/*.java"
+
+# Clean the repository
+mvn clean
+mkdir target; mkdir target/classes;
+
+echo
+echo "Initial compile (no Index Checker)"
+time javac $JAVAC_OPTIONS $SOURCE_FILES
+echo "---------------------------------"
+echo
+
+echo "Compile and check with Index Checker"
+time javac $JAVAC_OPTIONS -processor index $SOURCE_FILES
+echo "---------------------------------"
+echo
+
+echo "Compile again without the Index Checker"
+time javac $JAVAC_OPTIONS $SOURCE_FILES
+echo "---------------------------------"
+

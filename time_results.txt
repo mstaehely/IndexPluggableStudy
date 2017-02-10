@@ -1,0 +1,52 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Joda-Time 2.9.8-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ joda-time ---
+[INFO] Deleting /home/jasperh/CSE490E/joda-time-ann/target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 1.413s
+[INFO] Finished at: Fri Feb 10 09:55:49 GMT 2017
+[INFO] Final Memory: 6M/123M
+[INFO] ------------------------------------------------------------------------
+
+Initial compile (no Index Checker)
+
+real	0m13.031s
+user	0m32.859s
+sys	0m4.031s
+---------------------------------
+
+Compile and check with Index Checker
+error: AsSuperVisitor: type is not an erased subtype of supertype.
+  type: @UnknownVal ConverterSet
+  superType: Vector<E extends @UnknownVal Object>; invoke the compiler with -AprintErrorStack to see the stack trace.
+error: AsSuperVisitor: type is not an erased subtype of supertype.
+  type: @MinLen(0) ConverterSet
+  superType: Vector<E extends @MinLen(0) Object>; invoke the compiler with -AprintErrorStack to see the stack trace.
+error: AsSuperVisitor: type is not an erased subtype of supertype.
+  type: @SameLenUnknown ConverterSet
+  superType: Vector<E>; invoke the compiler with -AprintErrorStack to see the stack trace.
+error: AsSuperVisitor: type is not an erased subtype of supertype.
+  type: @UpperBoundUnknown ConverterSet
+  superType: Vector<E>; invoke the compiler with -AprintErrorStack to see the stack trace.
+error: AsSuperVisitor: type is not an erased subtype of supertype.
+  type: @LowerBoundUnknown ConverterSet
+  superType: Vector<E extends @LowerBoundUnknown Object>; invoke the compiler with -AprintErrorStack to see the stack trace.
+5 errors
+
+real	8m26.582s
+user	12m46.813s
+sys	0m11.703s
+---------------------------------
+
+Compile again without the Index Checker
+
+real	0m14.065s
+user	0m31.297s
+sys	0m4.656s
+---------------------------------

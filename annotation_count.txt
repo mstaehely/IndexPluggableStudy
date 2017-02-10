@@ -1,0 +1,26 @@
+Files: 166
+Array uses: 1379
+
+Annotations:
+IndexFor: 32
+IndexOrHigh: 0
+IndexOrLow: 1
+Positive: 141
+NonNegative: 233
+GTENegativeOne: 6
+LTLengthOf: 8
+LTEqLengthOf: 0
+LTOMLengthOf: 1
+MinLen: 17
+SameLen: 6
+
+
+Suppressions:
+Total Suppressions: 166
+index:array.access.unsafe.high: 66
+index:array.access.unsafe.low: 0
+index:argument: 44
+index:return: 12
+index:assignment: 10
+index:override: 1
+index: 33
