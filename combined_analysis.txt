@@ -1,0 +1,61 @@
+Suppression Types:
+Unsafe high access- 81 total
+    As a result of partial/period- 27
+    Inability to verify array exists at runtime- 11
+    Index arithmetic- 9
+    Variable array length- 1
+    Unable to annotate constants- 6
+    Result of size() call- 10
+    Size before array- 3
+    Bitwise operation- 7
+    Other- 1 (main)
+    Unclear bounds- 6
+Unsafe low access- 8 total 
+    Unable to guarantee- 2
+    Bitwise operation- 5
+    Other- 1 (main)
+Incompatible assignment- 7 total
+    Unable to annotate constants- 3
+    Bitwise operation- 2
+    No guarantee from JDK - 1
+    Unable to guarantee - 1
+Incompatible argument- 58 total
+    Result of partial/period- 25
+    Array length guarantees- 5
+    Unable to guarantee- 21
+    Result of size() call- 1
+    List being operated on- 1
+    Bitwise operation- 1
+    Arithmetic guarantee- 2
+    No guarantee from JDK- 1
+    Incompatible- 1
+Incompatible return- 21 total 
+    Unable to guarantee- 18
+    No guarantee from JDK- 1
+    Unsupported JDK- 2 (DateFormat)
+Override parameter invalid- 1 total
+Total- 176
+
+Other suppressions:
+JDK annotations- 7
+String- 20
+
+
+Categorized:
+Result of partial/period- 52
+Unable to guarantee/false posistive- 42
+Bitwise operations- 15 
+Call to size()- 11
+Nullity- 11
+Constants- 9
+Index arithmetic- 9 
+Unclear bounds- 6
+No guarantee from JDK- 5
+Array length variable- 5
+Init before array- 3
+Arithmetic guarantee- 2
+Other (main method)- 2
+Variable length- 1
+Override invalid- 1
+Incompatible argument- 1
+List- 1
