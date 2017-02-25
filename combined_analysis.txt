@@ -1,7 +1,7 @@
 Suppression Types:
-Unsafe high access- 81 total
+Unsafe high access- 73 total
     As a result of partial/period- 27
-    Inability to verify array exists at runtime- 11
+    Inability to verify array exists at runtime- 9
     Index arithmetic- 9
     Variable array length- 1
     Unable to annotate constants- 6
@@ -9,7 +9,6 @@ Unsafe high access- 81 total
     Size before array- 3
     Bitwise operation- 7
     Other- 1 (main)
-    Unclear bounds- 6
 Unsafe low access- 8 total 
     Unable to guarantee- 2
     Bitwise operation- 5
@@ -34,7 +33,8 @@ Incompatible return- 21 total
     No guarantee from JDK- 1
     Unsupported JDK- 2 (DateFormat)
 Override parameter invalid- 1 total
-Total- 176
+Cast Suppression- 1 total
+Total- 172
 
 Other suppressions:
 JDK annotations- 7
@@ -46,10 +46,9 @@ Result of partial/period- 52
 Unable to guarantee/false posistive- 42
 Bitwise operations- 15 
 Call to size()- 11
-Nullity- 11
+Nullity- 9
 Constants- 9
 Index arithmetic- 9 
-Unclear bounds- 6
 No guarantee from JDK- 5
 Array length variable- 5
 Init before array- 3
@@ -59,3 +58,4 @@ Variable length- 1
 Override invalid- 1
 Incompatible argument- 1
 List- 1
+Casting- 1
