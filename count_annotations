@@ -20,6 +20,7 @@ echo "SameLen: $(grep '@SameLen' -r src/main/java | wc -l)"
 echo
 echo
 echo "Suppressions:"
+echo "Estimated count: $(grep '@SuppressWarnings("index' -r src/main/java |wc -l)"
 echo "index:array.access.unsafe.high: $(grep 'index:array.access.unsafe.high' -r src/main/java | wc -l)"
 echo "index:array.access.unsafe.low: $(grep 'index:array.access.unsafe.low' -r src/main/java | wc -l)"
 echo "index:array.length.negative: $(grep 'index:array.length.negative' -r src/main/java | wc -l)"
