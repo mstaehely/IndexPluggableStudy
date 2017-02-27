@@ -1,5 +1,5 @@
 Suppression Types:
-Unsafe high access- 77 total
+Unsafe high access- 76 total
     As a result of partial/period- 27
     Inability to verify array exists at runtime- 9
     Index arithmetic- 9
@@ -8,12 +8,11 @@ Unsafe high access- 77 total
     Result of size() call- 10
     Size before array- 3
     Bitwise operation- 7
-    Array factory trouble- 4
+    Array factory trouble- 3
     Other- 1 (main)
-Unsafe low access- 8 total 
+Unsafe low access- 7 total 
     Unable to guarantee- 2
     Bitwise operation- 5
-    Other- 1 (main)
 Negative array length- 5 total
     Index arithmetic- 1
     Unable to guarantee- 3
@@ -22,12 +21,11 @@ Incompatible assignment- 21 total
     Unable to guarantee- 19
     Unable to chase references- 1
     JDK cannot guarantee- 1
-Incompatible argument- 59 total
+Incompatible argument- 58 total
     Result of partial/period- 26
     Array length guarantees- 5
     Unable to guarantee- 21
     Result of size() call- 1
-    List being operated on- 1
     Bitwise operation- 1
     Arithmetic guarantee- 2
     No guarantee from JDK- 1
@@ -57,12 +55,11 @@ Index arithmetic- 9
 No guarantee from JDK- 6
 Array length variable- 5
 Init before array- 3
-Other (main method)- 3
+Other (main method)- 2
 Arithmetic guarantee- 2
 Unsupported JDK- 2
 Variable length- 1
 Override invalid- 1
 Incompatible argument- 1
-List- 1
 Casting- 1
 Chasing references- 1

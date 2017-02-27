@@ -22,10 +22,9 @@ echo
 echo "Suppressions:"
 echo "index:array.access.unsafe.high: $(grep 'index:array.access.unsafe.high' -r src/main/java | wc -l)"
 echo "index:array.access.unsafe.low: $(grep 'index:array.access.unsafe.low' -r src/main/java | wc -l)"
+echo "index:array.length.negative: $(grep 'index:array.length.negative' -r src/main/java | wc -l)"
 echo "index:argument: $(grep 'index:argument' -r src/main/java | wc -l)"
 echo "index:return: $(grep 'index:return' -r src/main/java | wc -l)"
 echo "index:assignment: $(grep 'index:assignment' -r src/main/java | wc -l)"
 echo "index:override: $(grep 'index:override' -r src/main/java | wc -l)"
 echo "index: $(grep '@SuppressWarnings("index")' -r src/main/java | wc -l)"
-
-
