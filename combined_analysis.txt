@@ -36,7 +36,7 @@ Incompatible return- 13 total
     Unsupported JDK- 2
 Override parameter invalid- 1 total
 Cast Suppression- 1 total
-Total- 185
+Total- 182
 
 Other suppressions:
 JDK annotations- 5
