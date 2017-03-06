@@ -53,12 +53,11 @@ Nullity- 9
 Constants- 9
 Index arithmetic- 9 
 No guarantee from JDK- 6
-Array length variable- 5
+Array length variable- 6
 Init before array- 3
 Other (main method)- 2
 Arithmetic guarantee- 2
 Unsupported JDK- 2
-Variable length- 1
 Override invalid- 1
 Incompatible argument- 1
 Casting- 1
