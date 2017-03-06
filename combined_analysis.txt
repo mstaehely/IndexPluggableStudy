@@ -47,7 +47,7 @@ Array Factory- 2
 Categorized:
 Result of partial/period- 53
 Unable to guarantee/false posistive- 52
-Bitwise operations- 15 
+Unary ~ - 14
 Call to size()- 11
 Nullity- 9
 Constants- 9
@@ -62,3 +62,4 @@ Override invalid- 1
 Incompatible argument- 1
 Casting- 1
 Chasing references- 1
+Unary & - 1
