@@ -18,7 +18,17 @@ that the checker runs without error. We are not attempting to demonstrate the so
 
 To automatically count the annotations we added to joda-time, checkout the AnnoFinal tag of [our fork of joda-time](https://github.com/mstaehely/joda-time), and run the script `count_annotations` that is in this repository from the root of the cloned joda-time repository. Our results are in `annotation_count.txt`.
 
-To run the Index Checker on our fork, you should run `mvn compile` to download the joda-convert dependency. It will likely encounter an error while running, but this is expected behavior. Then run
+```
+git clone git@github.com:mstaehely/joda-time.git
+cd joda-time
+git checkout AnnoFinal
+../count_annotations
+```
+Results for number of suppressions are not precise, since we are using a simple regex to count them. See below for an accurate count.
+
+To automatically create our table of suppressions categorized by root cause, run the script `./make_ann_category_table.py` from the root of this repository.
+
+To run the Index Checker on our fork, you should run `mvn compile` to download the joda-convert dependency. It will likely encounter an error while running, but this is expected behavior. Then, with javac referencing the checker framework compiler, run
 ```
 javac -classpath target/classes:$HOME/.m2/repository/org/joda/joda-convert/1.2/joda-convert-1.2.jar: -sourcepath src/main/java:target/generated-sources/annotations -d target/classes -processor index -implicit:class src/main/java/org/joda/time/*.java src/main/java/org/joda/time/*/*.java
 ```
