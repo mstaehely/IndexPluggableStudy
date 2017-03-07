@@ -1,6 +1,6 @@
 Suppression Types:
-Unsafe high access- 76 total
-    As a result of partial/period- 27
+Unsafe high access- 75 total
+    As a result of partial/period- 25
     Inability to verify array exists at runtime- 9
     Index arithmetic- 9
     Variable array length- 1
@@ -35,7 +35,7 @@ Incompatible return- 12 total
     Unsupported JDK- 2
 Override parameter invalid- 1 total
 Cast Suppression- 1 total
-Total- 182
+Total- 176
 
 Other suppressions:
 JDK annotations- 5
@@ -44,8 +44,9 @@ Deprecated- 2
 Array Factory- 2
 
 Categorized:
-Inheritance- 116
+Inheritance- 103
 Unary~- 14
+Size- 11
 Nullity- 9
 Index_arithmetic- 9 
 Constants- 6
