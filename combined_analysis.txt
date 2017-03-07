@@ -17,10 +17,9 @@ Negative array length- 5 total
     Index arithmetic- 1
     Unable to guarantee- 3
     Other- 1 (main)
-Incompatible assignment- 21 total
-    Unable to guarantee- 19
+Incompatible assignment- 17 total
+    Unable to guarantee- 16
     Unable to chase references- 1
-    JDK cannot guarantee- 1
 Incompatible argument- 58 total
     Result of partial/period- 26
     Array length guarantees- 5
@@ -28,11 +27,11 @@ Incompatible argument- 58 total
     Result of size() call- 1
     Bitwise operation- 1
     Arithmetic guarantee- 2
-    No guarantee from JDK- 1
+    Can't express guarantee- 1
     Incompatible- 1
-Incompatible return- 13 total 
+Incompatible return- 12 total 
     Unable to guarantee- 7
-    No guarantee from JDK- 4
+    Can't express guarantee- 3
     Unsupported JDK- 2
 Override parameter invalid- 1 total
 Cast Suppression- 1 total
@@ -45,19 +44,19 @@ Deprecated- 2
 Array Factory- 2
 
 Categorized:
-List like objects- 116
-Unary ~- 14
+Inheritance- 116
+Unary~- 14
 Nullity- 9
-Constants- 9
-Index arithmetic- 9 
-No guarantee from JDK- 6
-Array length variable- 6
-Init before array- 3
-Other (main method)- 2
-Arithmetic guarantee- 2
-Unsupported JDK- 2
-Override invalid- 1
-Incompatible argument- 1
+Index_arithmetic- 9 
+Constants- 6
+Array_len_var- 6
+Guarantee_expr- 4
+Init_before_array- 3
+Main_method- 2
+Arith_guarantee- 2
+Unsupported_JDK- 2
+Override_invalid- 1
+Incompatible_argument- 1
 Casting- 1
-Chasing references- 1
-Unary & - 1
+Chasing_references- 1
+Unary& - 1
