@@ -48,9 +48,9 @@ print()
 print("Suppressions: {}".format(total_suppressions))
 for line in suppression_lines:
     print(line)
-print()
-print()
-print("General Suppressions: {}".format(total_general_suppressions))
-for line in general_suppression_lines:
-    print(line)
+# print()
+# print()
+# print("General Suppressions: {}".format(total_general_suppressions))
+# for line in general_suppression_lines:
+#     print(line)
 
