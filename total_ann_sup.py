@@ -10,6 +10,8 @@ annotation_lines = []
 total_annotations = 0
 suppression_lines = []
 total_suppressions = 0
+general_suppression_lines = []
+total_general_suppressions = 0
 for line in lines:
     line = line.rstrip()
     if line.startswith("Files:"):
@@ -20,6 +22,8 @@ for line in lines:
         group = "Annotations"
     elif line == "Suppressions:":
         group = "Suppressions"
+    elif line == "General Suppressions:":
+        group = "General Suppressions"
     elif line == "":
         pass
     elif group == "Annotations":
@@ -28,6 +32,9 @@ for line in lines:
     elif group == "Suppressions":
         suppression_lines.append(line)
         total_suppressions += int(line.split(': ')[1])
+    elif group == "General Suppressions":
+        general_suppression_lines.append(line)
+        total_general_suppressions += int(line.split(': ')[1])
     else:
         assert False
 
@@ -40,5 +47,10 @@ print()
 print()
 print("Suppressions: {}".format(total_suppressions))
 for line in suppression_lines:
+    print(line)
+print()
+print()
+print("General Suppressions: {}".format(total_general_suppressions))
+for line in general_suppression_lines:
     print(line)
 
