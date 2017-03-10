@@ -37,7 +37,7 @@ echo "Unary &: $(grep 'Unary &' -r src/main/java | wc -l)"
 echo
 echo
 echo "General Suppressions:"
-echo "Unsupported library in JDK: $(grep 'Unsupported JDK' -r src/main/java | wc -l)"
+echo "Calendar class guarantees: $(grep 'Calendar class does not' -r src/main/java | wc -l)"
 echo "Strings: $(grep 'Not working with String' -r src/main/java | wc -l)"
 echo "Deprecated class: $(grep 'Deprecated class' -r src/main/java | wc -l)"
 echo "Result of array factory: $(grep 'Result of array factory' -r src/main/java | wc -l)"
