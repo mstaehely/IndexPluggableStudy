@@ -5,10 +5,10 @@ A case study being performed on the Index Checker pluggable tool, from a program
 This case study is looking to examine the effectiveness and efficiency of the index checker tool, with
 respect to defect prevention and time saved or spent using the annotation system provided by the tool.
 
-The case study will be performed on two separate codebases. The first is the Joda-Time codebase, located
-at https:www.github.com/JodaOrg/joda-time. The second codebase will be the Google Collections framework,
-referred to as Guava. These codebases will be annotated using the Index Checker to analyze the ease of 
-use of the index checker on already existing, well-documented, and useable sets of code. We will determine
+The case study was performed on the Joda-Time codebase, located
+at https:www.github.com/JodaOrg/joda-time. This codebase was annotated using the Index Checker to
+analyze the ease of
+use of the index checker on already existing, well-documented, and useable code. We will determine
 this by the number of annotations we perform, as well as the difficulty in inserting those annotations such
 that the checker runs without error. We are not attempting to demonstrate the soundness of the checker.
 
@@ -16,17 +16,14 @@ that the checker runs without error. We are not attempting to demonstrate the so
 
 # Generating results
 
-To automatically count the annotations we added to joda-time, checkout the AnnoFinal tag of [our fork of joda-time](https://github.com/mstaehely/joda-time), and run the script `count_annotations` that is in this repository from the root of the cloned joda-time repository. Our results are in `annotation_count.txt`.
+To automatically count the annotations we added to joda-time, checkout the AnnoFinal tag of [our fork of joda-time](https://github.com/mstaehely/joda-time), and run the scripts `count_annotations | total_ann_sup.py` that are in this repository from the root of the cloned joda-time repository.
 
 ```
 git clone git@github.com:mstaehely/joda-time.git
 cd joda-time
 git checkout AnnoFinal
-../count_annotations
+../count_annotations | ../total_ann_sup.py
 ```
-Results for number of suppressions are not precise, since we are using a simple regex to count them. See below for an accurate count.
-
-To automatically create our table of suppressions categorized by root cause, run the script `./make_ann_category_table.py` from the root of this repository.
 
 To run the Index Checker on our fork, you should run `mvn compile` to download the joda-convert dependency. It will likely encounter an error while running, but this is expected behavior. Then, with javac referencing the checker framework compiler, run
 ```
