@@ -12,6 +12,15 @@ code. We will determine this by the number of annotations we perform, as well as
 inserting those annotations such that the checker runs without error. We are not attempting to demonstrate 
 the soundness of the checker.
 
+The version of the Checker that was used for this case study is not the most recent, and as such there may
+be new issues or fixes, which this case study does not address. To obtain the version of the Checker Framework,
+follow the instructions in the manual located [here] (https://checkerframework.org/manual/#build-source) to obtain the most recent build.
+Before building the Checker, enter the following command within its base directory to obtain the version used for 
+this study:
+```
+git checkout 17e90d7
+```
+
 =========================
 
 # Generating results
